@@ -21,7 +21,7 @@ StakeReloadXS is a subscription-based web application that allows users to claim
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/StakeReloadXS/StakeReloadXS.com
+    git clone https://github.com/StakeReloadXS/StakeReloadXScom
     ```
 
 2. Navigate to the project directory:
