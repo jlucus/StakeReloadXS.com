@@ -56,7 +56,7 @@ body {
   /* 1 */
   line-height: inherit;
   /* 2 */
-  background-color: #000000; /* Dark Red */
+  background-color: #450a0a; /* Dark Red */
 }
 
 /*
@@ -1439,10 +1439,11 @@ input:checked + .toggle-bg {
   border-top-width: 1px;
 }
 
-.border-gray-200 {
+.border-red-200 {
   --tw-border-opacity: 1;
-  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+  border-color: rgb(185, 28, 28 / var(--tw-border-opacity));
 }
+
 
 .border-gray-100 {
   --tw-border-opacity: 1;
@@ -1468,6 +1469,12 @@ input:checked + .toggle-bg {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+
+.bg-red-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(69, 10, 10 / var(--tw-bg-opacity));
+}
+
 
 .bg-purple-700 {
   --tw-bg-opacity: 1;
