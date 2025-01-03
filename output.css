@@ -18,6 +18,8 @@
   /* 2 */
   border-color: #e60000;
   /* 2 */
+}
+
 ::before,
 ::after {
   --tw-content: '';
@@ -29,6 +31,47 @@
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
 */
+
+/* Logos */
+.logos {
+  .gamba {
+    background: url('./images/gamba.svg') no-repeat center center;
+    background-size: contain;
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    display: inline-block;
+  }
+  .fullhouse {
+    background: url('./images/fullhouse-logo.svg') no-repeat center center;
+    background-size: contain;
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    display: inline-block;
+  }
+  .stake {
+    background: url('./images/stake.svg') no-repeat center center;
+    background-size: contain;
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    display: inline-block;
+  }
+  .coins {
+    background: url('./images/coins.svg') no-repeat center center;
+    background-size: contain;
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    display: inline-block;
+  }
+  .xs {
+    background: url('./images/logo.svg') no-repeat center center;
+    background-size: contain;
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    display: inline-block;
+  }
+}
+/*logos*/
+
 
 html {
   line-height: 1.5;
