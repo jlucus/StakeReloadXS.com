@@ -18,7 +18,6 @@
   /* 2 */
   border-color: #e60000;
   /* 2 */
-}
 
 ::before,
 ::after {
@@ -489,7 +488,6 @@ embed,
 object {
   display: block;
   /* 1 */
-}
 }
 
 /*
