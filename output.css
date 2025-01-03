@@ -100,6 +100,38 @@ body {
   background-color: #450a0a; /* Dark Red */
 }
 
+header {
+  background-color: #450a0a; /* Dark Red */
+}
+
+nav {
+  max-width: 100%;
+  height: 100px; /* Maximum height of the navigation bar */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0 15px;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #d1d5db; /* Light gray */
+}
+
+nav .download-button {
+  background-color: #6b21a8; /* Purple */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+nav .download-button:hover {
+  background-color: #5b21b6; /* Darker purple */
+}
+
 /*
 1. Add the correct height in Firefox.
 2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
