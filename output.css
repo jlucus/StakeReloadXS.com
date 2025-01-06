@@ -32,7 +32,6 @@
 */
 
 /* Logos */
-.logos {
   .gamba {
     background: url('./images/gamba.svg') no-repeat center center;
     background-size: contain;
@@ -68,7 +67,6 @@
     height: 100px; /* Adjust the height as needed */
     display: inline-block;
   }
-}
 /*logos*/
 
 
