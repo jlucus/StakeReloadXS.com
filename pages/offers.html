@@ -38,6 +38,16 @@
     <link href="../output.css" rel="stylesheet">
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+    <style>
+        .expandable-card {
+            transition: max-height 0.3s ease-out;
+            overflow: hidden;
+            max-height: 200px; /* Adjust based on initial content height */
+        }
+        .expandable-card.expanded {
+            max-height: 1000px; /* Adjust based on expanded content height */
+        }
+    </style>
 </head>
 <body>
     <header class="fixed w-full bg-white dark:bg-red-950">
@@ -47,12 +57,11 @@
                 <span class="text-xl font-semibold text-white">StakeReloadXS</span>
             </div>
             <div class="flex items-center space-x-8">
-                <a href="/pages/home.html" class="text-gray-600 hover:text-purple-500">Home</a>
-                <a href="/pages/home.html" class="text-gray-600 hover:text-purple-400">Features</a>
-                <a href="/pages/home.html" class="text-gray-600 hover:text-purple-400">Pricing</a>
-                <a href="/pages/home.html" class="text-gray-600 hover:text-purple-400">FAQ</a>
-                <a href="/pages/home.html" class="text-gray-600 hover:text-purple-400">Contact</a>
-                <a href="/pages/offers.html" class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">Offers</a>
+                <a href="../index.html#top" class="text-gray-600 hover:text-purple-500">Home</a>
+                <a href="../index.html#features" class="text-gray-600 hover:text-purple-400">Features</a>
+                <a href="../index.html#pricing" class="text-gray-600 hover:text-purple-400">Pricing</a>
+                <a href="../index.html#faq" class="text-gray-600 hover:text-purple-400">FAQ</a>
+                <a href="../index.html#contact" class="text-gray-600 hover:text-purple-400">Contact</a>
                 <a href="https://github.com/stakereloadxs/stakereloadxs" class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">Download</a>
             </div>
         </nav>
@@ -68,54 +77,64 @@
             </div>
             <div class="grid gap-8 lg:grid-cols-3 sm:grid-cols-1">
                 <!-- Promotional Element 1 -->
-                <div class="p-6 bg-white rounded-lg shadow-md dark:bg-gray-800">
+                <div class="p-6 bg-white rounded-lg shadow-md dark:bg-gray-800 expandable-card" onclick="toggleCard(this)">
                     <div class="gamba h-32 w-32 mx-auto mb-4"></div>
                     <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Gamba Offer</h2>
-                    <p class="text-gray-500 dark:text-gray-400 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                    <p class="text-gray-500 dark:text-gray-400 mb-4">Best in industry rewards.</p>
+                    <div class="hidden text-gray-500 dark:text-gray-400">
+                        <p>First Deposit Bonus: 20 x Plinko $1.00</p>
+                        <p>%50 Rank Up Matched</p>
+                        <p>Weekly Races</p>
+                        <p>%50 Rev Share</p>
+                        <p>%15 Lossback</p>
+                    </div>
                     <a href="#" class="text-purple-600 hover:underline">Learn more</a>
                 </div>
-                <!-- Promotional Element 2 -->
+                <!-- Add more promotional elements as needed -->
+                 <!-- Promotional Element 2 -->
                 <div class="p-6 bg-white rounded-lg shadow-md dark:bg-gray-800">
                     <div class="coins h-32 w-32 mx-auto mb-4"></div>
                     <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Coins Offer</h2>
                     <p class="text-gray-500 dark:text-gray-400 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
                     <a href="#" class="text-purple-600 hover:underline">Learn more</a>
                 </div>
+                <!-- Add more promotional elements as needed -->
                 <!-- Promotional Element 3 -->
                 <div class="p-6 bg-white rounded-lg shadow-md dark:bg-gray-800">
                     <div class="fullhouse h-32 w-32 mx-auto mb-4"></div>
                     <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Fullhouse Offer</h2>
-                    <p class="text-gray-500 dark:text-gray-400 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                    <p class="text-gray-500 dark:text-gray-400 mb-4">Race to the Finish of $FH Token Airdrop!</p>
                     <a href="#" class="text-purple-600 hover:underline">Learn more</a>
                 </div>
+                <!-- Add more promotional elements as needed -->    
                 <!-- Promotional Element 4 -->
                 <div class="p-6 bg-white rounded-lg shadow-md dark:bg-gray-800">
                     <div class="stake h-32 w-32 mx-auto mb-4"></div>
                     <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Stake Offer</h2>
-                    <p class="text-gray-500 dark:text-gray-400 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                    <p class="text-gray-500 dark:text-gray-400 mb-4">$21 Free for Signing up!</p>
                     <a href="#" class="text-purple-600 hover:underline">Learn more</a>
                 </div>
                 <!-- Promotional Element 5 -->
                 <div class="p-6 bg-white rounded-lg shadow-md dark:bg-gray-800">
                     <div class="gamba h-32 w-32 mx-auto mb-4"></div>
-                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Gamba Offer</h2>
-                    <p class="text-gray-500 dark:text-gray-400 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">StakeUSA Offer</h2>
+                    <p class="text-gray-500 dark:text-gray-400 mb-4">$25 NO STRINGS ATTACHED</p>
                     <a href="#" class="text-purple-600 hover:underline">Learn more</a>
                 </div>
                 <!-- Promotional Element 6 -->
                 <div class="p-6 bg-white rounded-lg shadow-md dark:bg-gray-800">
                     <div class="coins h-32 w-32 mx-auto mb-4"></div>
-                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Coins Offer</h2>
-                    <p class="text-gray-500 dark:text-gray-400 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Shuffle Offer</h2>
+                    <p class="text-gray-500 dark:text-gray-400 mb-4">Participate in $SHFL Airdrop #3</p>
                     <a href="#" class="text-purple-600 hover:underline">Learn more</a>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- End Offers Section -->
-
-    <!-- Start Footer block -->
-    <footer class="bg-white dark:bg-red-950">
+    </div>
+</section>
+<!-- End Offers Section -->
+ <!-- Start Footer block -->
+<footer class="bg-white dark:bg-red-950">
         <div class="max-w-screen-xl p-4 py-6 mx-auto lg:py-16 md:p-8 lg:p-10">
             <div class="text-center">
                 <a href="#" class="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900 dark:text-white">
@@ -127,5 +146,13 @@
         </div>
     </footer>
     <!-- End Footer block -->
+
+    <script>
+        function toggleCard(card) {
+            card.classList.toggle('expanded');
+            const hiddenContent = card.querySelector('.hidden');
+            hiddenContent.classList.toggle('hidden');
+        }
+    </script>
 </body>
 </html>
