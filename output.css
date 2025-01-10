@@ -2428,4 +2428,16 @@ input[type]
     margin-bottom: 2rem;
   }
 }}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.carousel > * {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
 }
