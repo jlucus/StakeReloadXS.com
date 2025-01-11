@@ -1,1 +1,5 @@
 node_modules/
+.app/
+StakeReloadXS/StakeReloadXScom/.env
+.env
+StakeReloadXS/StakeReloadXScom/app/*
