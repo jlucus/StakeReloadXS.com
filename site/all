@@ -1,0 +1,54 @@
+dded new site templates
+
+
+
+#
+# On branch main
+# Your branch is up to date with 'origin/main'.
+#
+# Changes to be committed:
+#	deleted:    .env
+#	deleted:    .gitignore
+#	deleted:    .vscode/settings.json
+#	modified:   README.md
+#	deleted:    android-chrome-192x192.png
+#	deleted:    android-chrome-512x512.png
+#	deleted:    app/ccpay.py
+#	deleted:    apple-touch-icon.png
+#	deleted:    browserconfig.xml
+#	deleted:    ccpayment0139266877771d61f301725cd29cdb86.txt
+#	deleted:    favicon-16x16.png
+#	deleted:    favicon-32x32.png
+#	deleted:    favicon.ico
+#	modified:   index.html
+#	deleted:    index1.html
+#	deleted:    input.css
+#	deleted:    output.css
+#	deleted:    output1.css
+#	deleted:    outputtt.css
+#	deleted:    package-lock.json
+#	deleted:    package.json
+#	deleted:    pages/aboutus.html
+#	deleted:    pages/dl.html
+#	deleted:    pages/home.html
+#	deleted:    pages/offers.html
+#	deleted:    pages/privacy.html
+#	deleted:    pages/terms.html
+#	deleted:    pages/underconstruction.html
+#	deleted:    scheduled-fetch.yml
+#	deleted:    scripts/nav.js
+#	deleted:    scripts/partners.js
+#	deleted:    site.webmanifest
+#	deleted:    tailwind.config.js
+#
+# Untracked files:
+#	ccpay.py
+#	components/
+#	images/android-chrome-192x192.png
+#	images/android-chrome-512x512.png
+#	images/apple-touch-icon.png
+#	images/favicon-16x16.png
+#	images/favicon-32x32.png
+#	images/favicon.ico
+#	styles.css
+
