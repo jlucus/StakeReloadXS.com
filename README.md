@@ -60,6 +60,16 @@ We welcome contributions from the community. To contribute:
     ```
 5. Open a pull request on GitHub.
 
+## To-do
+1. Add Pages(some are partially completed): 
+- Home
+- Affiliates
+- Team
+- Privacy, Terms, Refunds
+- Merch/Services
+- Login with telegram widget
+
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](http://_vscodecontentref_/2) file for details.
