@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 6px;
+      max-lg:flex-grow;
+      overflow-x: auto;
+    }
+
+    .Navigation__img {
+      width: 36px;
+      height: 36px;
+      margin-right: 6px;
+    }
+
+    .Navigation__link {
+      color: #333;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .Navigation__link:hover {
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="navigation lg-flex items-center w-full gap-6">
+    <img src="/images/og-image.png" alt="logo" class="Navigation__img">
+    <ul class="lg-flex">
+      <li class="hidden max-lg:block transition-all">
+        <a href="/index.html">Home</a>
+      </li>
+      <li class="max-lg:border-b max-lg:py-3 px-3">
+        <a href="/src/pages/about.html">About</a>
+      </li>
+      <li class="max-lg:border-b max-lg:py-3 px-3">
+        <a href="/src/pages/team.html">Team</a>
+      </li>
+      <li class="max-lg:border-b max-lg:py-3 px-3">
+        <a href="/src/pages/shop.html">Shop</a>
+      </li>
+      <li class="max-lg:border-b max-lg:py-3 px-3">
+        <a href="/src/pages/offers.html">Signup Offers</a>
+      </li>
+      <li class="max-lg:border-b max-lg:py-3 px-3">
+        <a href="/src/pages/help.html">Help Center</a>
+      </li>
+      <li class="max-lg:border-b max-lg:py-3 px-3">
+        <a href="/src/pages/blog.html">Blog</a>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>

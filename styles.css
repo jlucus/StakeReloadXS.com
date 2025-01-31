@@ -34,6 +34,9 @@
     justify-content: center;
     align-items: center;
   }
+
+
+  
   /* cyrillic-ext */
 @font-face {
     font-family: 'Inter';
@@ -420,4 +423,38 @@
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/poppins/v22/pxiByp8kv8JHgFVrLBT5Z1xlFQ.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif; /* add this line */
+  }
+  
+  .nav-button-spacing {
+    margin-right: 20px; /* adjust as needed */
+  }
+  
+  .nav-button {
+    margin-left: 10px; /* adjust as needed */
+    font-size: 16px; /* adjust as needed */
+    line-height: 1.5; /* adjust as needed */
+    color: #333; /* adjust as needed */
+  }
+  
+  /* add these lines to include the Poppins font */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('poppins-webfont.woff2') format('woff2');
+  }
+  
+  .nav-button-spacing {
+    margin-right: 20px; /* adjust as needed */
+  }
+  
+  .nav-button {
+    margin-left: 10px; /* adjust as needed */
+    font-size: 16px; /* adjust as needed */
+    line-height: 1.5; /* adjust as needed */
+    color: #333; /* adjust as needed */
   }
