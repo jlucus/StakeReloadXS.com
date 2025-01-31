@@ -18,3 +18,30 @@
     <a href="https://coins.game">Coins Game</a>
   </div>
 </div>
+
+
+<div class="navigation lg-flex items-center w-full gap-6">
+  <img src="/images/og-image.png" alt="logo" class="Navigation__img">
+  <ul class="lg-flex">
+    <button type="button" class="bg-transparent hover:bg-red-600 border border-red-600 px-6 py-3.5 rounded-md text-gray-100 transition-all">
+      <li class="hidden max-lg:block transition-all">Home <a href="/index.html"></a>
+      </button>
+    <button type="button" class="bg-transparent hover:bg-red-600 border border-red-600 px-6 py-3.5 rounded-md text-gray-100 transition-all">
+      <li class="hidden max-lg:block transition-all">About <a href="/about.html"></a>
+      </button>
+      <button type="button" class="bg-transparent hover:bg-red-600 border border-red-600 px-6 py-3.5 rounded-md text-gray-100 transition-all">
+        <li class="hidden max-lg:block transition-all">Team <a href="/team.html"></a>
+        </button>
+      <button type="button" class="bg-transparent hover:bg-red-600 border border-red-600 px-6 py-3.5 rounded-md text-gray-100 transition-all">
+        <li class="hidden max-lg:block transition-all">Shop <a href="/shop.html"></a>
+        </button>
+        <button type="button" class="bg-transparent hover:bg-red-600 border border-red-600 px-6 py-3.5 rounded-md text-gray-100 transition-all">
+          <li class="hidden max-lg:block transition-all">Offers <a href="/offers.html"></a>
+          </button>
+        <button type="button" class="bg-transparent hover:bg-red-600 border border-red-600 px-6 py-3.5 rounded-md text-gray-100 transition-all">
+          <li class="hidden max-lg:block transition-all">Help <a href="/help.html"></a>
+          </button>
+          <button type="button" class="bg-transparent hover:bg-red-600 border border-red-600 px-6 py-3.5 rounded-md text-gray-100 transition-all">
+            <li class="hidden max-lg:block transition-all">Blog <a href="/blog.html"></a>
+            </button>
+          </ul>

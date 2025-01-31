@@ -23,15 +23,19 @@
   </style>
 </head>
 
+ 
+<div class="relative lg:min-h-screen 2xl:min-h-[730px] before:absolute before:inset-0 before:w-full before:bg-black before:opacity-60" style="background-image: url(/images/page-logo.svg); background-size: cover; background-repeat: no-repeat"></div>        
+<script src="./src/NavigationMenu.js"></script>
+<div>
+      <!--spacer--> 
+     </div>
+    <div>
+      <hr class="border-gray-400 my-12" />
+
 <body class="max-w-[1920px] mx-auto">
     <script defer="defer" type="text/javascript" src="http://78.128.127.152:8069/im_livechat/assets_embed.js"></script>
   <div class="bg-black text-gray-100 text-[15px]">
-
-    <div
-      class="relative lg:min-h-screen 2xl:min-h-[730px] before:absolute before:inset-0 before:w-full before:bg-black before:opacity-60"
-      style="background-image: url(https://readymadeui.com/dark-bg-image.webp); background-size: cover; background-repeat: no-repeat">
-
-      <header class='py-4 px-4 sm:px-10 z-50 min-h-[70px] relative'>
+    <header class='py-4 px-4 sm:px-10 z-50 min-h-[70px] relative'>
         <div class='lg:flex lg:items-center gap-x-2 relative'>
           <div class="flex items-center shrink-0">
             <a href="javascript:void(0)"><img src="/images/og-image.png" alt=""
@@ -39,12 +43,9 @@
             </a>
             <button id="toggleOpen" class='lg:hidden ml-auto'>
               <svg class="w-7 h-7" fill="#fff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clip-rule="evenodd"></path>
-              </svg>
+                <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
             </button>
-          </div>
+            </div>
 
           <div id="collapseMenu"
             class="lg:ml-14 max-lg:hidden lg:!block w-full max-lg:fixed max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50 z-50">
@@ -53,41 +54,9 @@
                 <path
                   d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
                   data-original="#000000"></path>
-                <path
-                  d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
-                  data-original="#000000"></path>
-              </svg>
-            </button>
-            <div class="navigation lg-flex items-center w-full gap-6">
-              <img src="/images/og-image.png" alt="logo" class="Navigation__img">
-              <ul class="lg-flex">
-                <button type="button" class="bg-transparent hover:bg-red-600 border border-red-600 px-6 py-3.5 rounded-md text-gray-100 transition-all">
-                  <li class="hidden max-lg:block transition-all">Home <a href="/index.html"></a>
-                  </button>
-                <button type="button" class="bg-transparent hover:bg-red-600 border border-red-600 px-6 py-3.5 rounded-md text-gray-100 transition-all">
-                  <li class="hidden max-lg:block transition-all">About <a href="/about.html"></a>
-                  </button>
-                  <button type="button" class="bg-transparent hover:bg-red-600 border border-red-600 px-6 py-3.5 rounded-md text-gray-100 transition-all">
-                    <li class="hidden max-lg:block transition-all">Team <a href="/team.html"></a>
-                    </button>
-                  <button type="button" class="bg-transparent hover:bg-red-600 border border-red-600 px-6 py-3.5 rounded-md text-gray-100 transition-all">
-                    <li class="hidden max-lg:block transition-all">Shop <a href="/shop.html"></a>
-                    </button>
-                    <button type="button" class="bg-transparent hover:bg-red-600 border border-red-600 px-6 py-3.5 rounded-md text-gray-100 transition-all">
-                      <li class="hidden max-lg:block transition-all">Offers <a href="/offers.html"></a>
-                      </button>
-                    <button type="button" class="bg-transparent hover:bg-red-600 border border-red-600 px-6 py-3.5 rounded-md text-gray-100 transition-all">
-                      <li class="hidden max-lg:block transition-all">Help <a href="/help.html"></a>
-                      </button>
-                      <button type="button" class="bg-transparent hover:bg-red-600 border border-red-600 px-6 py-3.5 rounded-md text-gray-100 transition-all">
-                        <li class="hidden max-lg:block transition-all">Blog <a href="/blog.html"></a>
-                        </button>
-                      </ul>
-                    </div>
-                  </div>
+                <path d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z" data-original="#000000"></path></svg>
+                </button>
                 </div>
-              </div>
-        </div>
       </header>
       <div class="max-w-5xl mx-auto text-center relative px-4 sm:px-10 mt-16">
         <h1 class="lg:text-7xl md:text-6xl text-4xl font-semibold mb-6 md:!leading-[80px]">Xtremely Simple Reloads
