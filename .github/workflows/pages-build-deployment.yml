@@ -1,4 +1,4 @@
-name: Build and Run
+name: Build and Deploy to Vercel
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  build_and_run:
+  build_and_deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,13 +19,25 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '20'
+        node-version: '22'
+        cache: 'npm'
 
     - name: Install Dependencies
       working-directory: ./backend
-      run: npm install
+      run: npm install package
 
-    - name: Build Project
+    - name: Install Vercel
+      working-directory: ./backend
+      run: npm i @vercel/speed-insights
+
+    - name: Run Project
       working-directory: ./backend
       run: npm run dev
-      
+
+    - name: Deploy to Vercel
+      uses: amondnet/vercel-action@v25
+      with:
+        vercel-token: secrets.VERCEL_TOKEN
+        vercel-org-id: secrets.VERCEL_ORG_ID
+        vercel-project-id: secrets.VERCEL_PROJECT_ID
+        working-directory: ./backend

@@ -1,25 +1,43 @@
-name: Deploy to StakeReloadXS.com
-on: [push]
+name: Build and Deploy to Vercel
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
 jobs:
-  deploy:
+  build_and_deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-        
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20'
-        
-      - name: Install dependencies
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '22'
+        cache: 'npm'
+
+    - name: Install Dependencies
+      working-directory: ./backend
+      run: npm install package
+
+    - name: Install Vercel
+      working-directory: ./backend
+      run: npm i @vercel/speed-insights
+
+    - name: Run Project
+      working-directory: ./backend
+      run: npm run dev
+
+    - name: Deploy to Vercel
+      uses: amondnet/vercel-action@v25
+      with:
+        vercel-token: secrets.VERCEL_TOKEN
+        vercel-org-id: secrets.VERCEL_ORG_ID
+        vercel-project-id: secrets.VERCEL_PROJECT_ID
         working-directory: ./backend
-        run: |
-          npm install package
-          
-      - name: Build and deploy
-        working-directory: ./backend
-        run: |
-          npm run dev
-          gh pages publish --delete-all
-          
