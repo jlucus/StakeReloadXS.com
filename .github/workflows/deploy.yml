@@ -37,3 +37,11 @@ jobs:
         vercel-org-id: secrets.VERCEL_ORG_ID
         vercel-project-id: secrets.VERCEL_PROJECT_ID
         working-directory: ./backend
+      
+    - name: Run Start
+      working-directory: ./backend
+      run: npm run start
+
+    - name: Run Dev
+      working-directory: ./backend
+      run: npm run dev
