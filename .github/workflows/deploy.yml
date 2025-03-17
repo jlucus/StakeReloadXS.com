@@ -30,10 +30,6 @@ jobs:
       working-directory: ./backend
       run: npm i @vercel/speed-insights
 
-    - name: Run Project
-      working-directory: ./backend
-      run: npm run dev
-
     - name: Deploy to Vercel
       uses: amondnet/vercel-action@v25
       with:
