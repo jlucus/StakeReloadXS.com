@@ -6,9 +6,11 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        run: |
+          cd /backend
       - name: Install dependencies
         run: |
-          npm install
+          npm install package
       - name: Build and deploy
         run: |
           npm run build
