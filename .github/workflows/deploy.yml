@@ -1,4 +1,4 @@
-name: Build and Deploy to Vercel
+name: Build and Deploy to Vercel 2
 
 on:
   push:
@@ -29,6 +29,10 @@ jobs:
     - name: Install Vercel
       working-directory: ./backend
       run: npm i @vercel/speed-insights
+
+    - name: Run Dev
+      working-directory: ./backend
+      run: npm run dev
 
     - name: Deploy to Vercel
       uses: amondnet/vercel-action@v25
