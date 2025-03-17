@@ -1,17 +1,31 @@
-name: Deploy to StakeReloadXS.com
-on: [push]
+name: Build and Run
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
 jobs:
-  deploy:
+  build_and_run:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-        run: |
-          cd /backend
-      - name: Install dependencies
-        run: |
-          npm install package
-      - name: Build and deploy
-        run: |
-          npm run build
-          gh pages publish --delete-all
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+
+    - name: Install Dependencies
+      working-directory: ./backend
+      run: npm install package
+
+    - name: Run Project
+      working-directory: ./backend
+      run: npm run dev
+      
