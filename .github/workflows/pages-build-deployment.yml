@@ -1,4 +1,4 @@
-name: Deploy to StakeReloadXS.com and github pages
+name: Deploy to StakeReloadXS.com
 on: [push]
 jobs:
   deploy:
@@ -8,6 +8,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Install dependencies
         run: |
+          cd /backend
           npm install package
       - name: Build and deploy
         run: |
