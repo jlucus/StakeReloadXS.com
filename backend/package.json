@@ -1,11 +1,12 @@
 {
   "name": "stakereloadxs-backend",
   "version": "1.0.0",
-  "description": "Backend server for StakeReloadXS payment processing",
-  "main": "backend/src/server.js",
+  "description": "Backend server for StakeReloadXS jlucus github payment processing",
+  "main": "src/server.js",
   "scripts": {
-    "start": "node backend/src/server.js",
-    "dev": "nodemon /backend/src/server.js",
+    "install": "node src/package.json",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
