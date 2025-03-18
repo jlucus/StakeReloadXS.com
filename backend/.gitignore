@@ -7,9 +7,7 @@ _MACOSX
 .github
 .gitignore
 
-## Node Modules
-node_modules
-
 
 ## Package Lock Compiled
 package-lock.json
+node_modules

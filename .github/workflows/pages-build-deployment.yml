@@ -24,7 +24,7 @@ jobs:
 
     - name: Install Dependencies
       working-directory: ./backend
-      run: npm install package
+      run: npm install
 
     - name: Install Vercel
       working-directory: ./backend
@@ -32,7 +32,7 @@ jobs:
 
     - name: Run Project
       working-directory: ./backend
-      run: npm run dev
+      run: npm start
 
     - name: Deploy to Vercel
       uses: amondnet/vercel-action@v25
