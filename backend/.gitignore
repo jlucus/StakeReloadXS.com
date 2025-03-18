@@ -1,3 +1,15 @@
+
+## Dot ENV
 .env
+_MACOSX
+
+## .github
 .github
+.gitignore
+
+## Node Modules
 node_modules
+
+
+## Package Lock Compiled
+package-lock.json
