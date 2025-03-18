@@ -1,43 +1,25 @@
-name: Build and Deploy to Vercel 2
-
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-
+name: Version 3
+on: [push]
 jobs:
-  build_and_deploy:
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v3
-
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
         node-version: '22'
         cache: 'npm'
+        
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-    - name: Install Dependencies
+    - name: Install dependencies
       working-directory: ./backend
       run: npm install package
-
-    - name: Install Vercel
+    
+    - name: Build and deploy
       working-directory: ./backend
-      run: npm i @vercel/speed-insights
-
-    - name: Deploy to Vercel
-      uses: amondnet/vercel-action@
-      with:
-        vercel-token: secrets.VERCEL_TOKEN
-        vercel-org-id: secrets.VERCEL_ORG_ID
-        vercel-project-id: secrets.VERCEL_PROJECT_ID
-        working-directory: ./backend
-      
-    - name: Run start
-      working-directory: ./backend
-      run: npm run start
+      run: |
+        npm start
+        gh pages publish --delete-all
+        
