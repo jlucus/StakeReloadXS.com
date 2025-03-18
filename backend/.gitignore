@@ -6,6 +6,7 @@ _MACOSX
 ## .github
 .github
 .gitignore
+.vscode
 
 
 ## Package Lock Compiled
