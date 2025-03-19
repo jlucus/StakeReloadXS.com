@@ -1,24 +1,30 @@
-name: Version 3
-on: push
+name: Build and Run
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
 jobs:
-  deploy:
+  build_and_run:
     runs-on: ubuntu-latest
+
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+    - name: Checkout Repository
+      uses: actions/checkout@v3
 
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '22'
-        cache: 'npm'
+        node-version: '20'
 
-    - name: Install dependencies
+    - name: Install Dependencies
       working-directory: ./backend
-      run: npm install
-    
-    - name: Build and deploy
+      run: npm install package
+
+    - name: Run Project
       working-directory: ./backend
-      run: |
-        npm start
-        gh pages publish --delete-all
+      run: npm run dev
