@@ -9,6 +9,7 @@ echo "Installing Git, Node.js, and npm..."
 sudo apt install -y git curl
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 sudo apt install -y nodejs
+sudo apt install -y npm
 
 # Verify installations
 echo "Node.js version: $(node -v)"
@@ -22,6 +23,7 @@ CLONE_DIR="xs-web"
 echo "Cloning repository from $REPO_URL..."
 git clone $REPO_URL $CLONE_DIR
 cd $CLONE_DIR 
+npm install package
 cd backend || exit
 
 # Install dependencies
