@@ -1,5 +1,5 @@
 {
-  "name": "stakereloadxs-backend",
+  "name": "stakereloadxs",
   "version": "1.0.0",
   "description": "Backend server for StakeReloadXS payment processing",
   "main": "src/server.js",
@@ -14,7 +14,7 @@
     "nowpayments",
     "telegram"
   ],
-  "author": "",
+  "author": "jlucus",
   "license": "ISC",
   "dependencies": {
     "axios": "^1.6.2",
