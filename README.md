@@ -130,7 +130,7 @@ npm start
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/StakeReloadXS/StakeReloadXScom
+    git clone https://github.com/StakeReloadXS/xs-web
     ```
 
 2. Navigate to the project directory:
@@ -189,9 +189,12 @@ For any inquiries or support, please contact us at [support@stakereloadxs.com](m
 Follow us on social media for the latest updates:
 
 - Twitter: [@reloadedxs](https://twitter.com/reloadedxs)
-- GitHub: [StakeReloadXS](https://github.com/stakereloadxs/stakereloadxs)
+- GitHub 1: [StakeReloadXS](https://github.com/stakereloadxs)
+- GitHub 2: [StakeReloadXS](https://github.com/stakereload)
+- Discord: [ReloadedXS](https://discord.gg/KsFPXT5QDW)
+- Telegram: [StakeReloadXS](https://t.me/StakeReloadXS)
 
 ---
-
+@StakeReloadXS @StakeReload
 © 2025 StakeReloadXS™. All Rights Reserved.
-# xs-web
+# StakeReloadXS.com xs-web
